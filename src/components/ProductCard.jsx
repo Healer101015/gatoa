@@ -17,17 +17,26 @@ export default function ProductCard({ product }) {
             {/* Conteúdo */}
             <div className="px-3 py-4 flex flex-col items-start">
                 {/* Nome */}
-                <h3 className="text-base font-normal leading-snug">
+                <h3
+                    className="text-base font-normal leading-snug"
+                    style={{ fontFamily: 'Teko, sans-serif' }}
+                >
                     {product.name}
                 </h3>
 
                 {/* Preço alinhado à esquerda */}
-                <p className="text-lg font-semibold mt-2">
+                <p
+                    className="text-lg font-semibold mt-2"
+                    style={{ fontFamily: 'Teko, sans-serif' }}
+                >
                     R$ {product.price.toFixed(2)}
                 </p>
 
                 {/* Botão logo abaixo, alinhado à esquerda */}
-                <button className="mt-3 border border-white bg-black text-white px-4 py-2 text-xs font-semibold uppercase hover:bg-white hover:text-black transition-colors">
+                <button
+                    className="mt-3 border border-white bg-black text-white px-4 py-2 text-xs font-semibold uppercase hover:bg-white hover:text-black transition-colors"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                >
                     Adicione ao carrinho
                 </button>
             </div>
