@@ -49,7 +49,7 @@ const products = [
     name: "Moletom Gatoa Preto",
     description: "Moletom canguru com capuz, flanelado por dentro.",
     price: 129.90,
-    imageUrl: "https://media.discordapp.net/attachments/1379159762112876585/1415031707211530270/Camiseta_Oversized_Makima_Um_corte_minimalista_na_frente_de_uma_grande_arte_atras_Garanta_.jpg?ex=68c1ba79&is=68c068f9&hm=ece31d7aa80bec93b0fbc008e311739fb380047297ce2e863cc340732033db8d&=&format=webp&width=768&height=960",
+    imageUrl: "https://media.discordapp.net/attachments/915047339448737802/1415035023714680862/Camiseta_Freedom_de_Attack_on_Titan_E_mais_que_uma_estampa_e_um_grito_por_liberdade_Adqui.jpg?ex=68c1bd8f&is=68c06c0f&hm=6e82780be478df6758b45788ab3eccaf73c4ac88454dd89bcda315fa2c152ba0&=&format=webp&width=768&height=960",
     isNew: true,
     stock: 8,
   },

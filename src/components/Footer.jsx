@@ -22,11 +22,9 @@ export default function Footer() {
 
           {/* Links de Navegação */}
           <div className="text-center">
-            <h4 className="font-semibold mb-2 uppercase tracking-wider">Links</h4>
+
             <ul className="space-y-1">
-              <li><a href="/" className="text-brand-white hover:text-brand-gray transition-colors">Home</a></li>
-              <li><a href="#promocoes" className="text-brand-white hover:text-brand-gray transition-colors">Promoções</a></li>
-              <li><a href="#" className="text-brand-white hover:text-brand-gray transition-colors">Contato</a></li>
+
             </ul>
           </div>
 
