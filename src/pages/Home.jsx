@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
-import gatoaLogo from "./gatoa-logo.jpg"; // Importa a imagem do gato
+import gatoaLogo from "../assets/gatoa-logo.jpg"; // Importa a imagem do gato
 
 // Dados estáticos das camisetas
 const products = [
