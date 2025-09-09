@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
+import gatoaLogo from "./gatoa-logo.jpg"; // Importa a imagem do gato
 
 // Dados estáticos das camisetas
 const products = [
@@ -68,6 +69,15 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-gray-400">
             Estilo e conforto em cada peça.
           </p>
+          {/* Imagem do gato adicionada aqui */}
+          <motion.img
+            src={gatoaLogo}
+            alt="Logo Gatoa"
+            className="mx-auto mt-8 w-48 h-48 rounded-full shadow-lg"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          />
         </motion.div>
       </section>
 
