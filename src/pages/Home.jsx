@@ -11,25 +11,25 @@ const products = [
     _id: "1",
     name: "The Evil. Camisa Oversized",
     price: 99.00,
-    imageUrl: "https://media.discordapp.net/attachments/1379159762112876585/1415022494825316413/ULTIMA_CHANCE_Nosso_DROP_1.0_ta_chegando_ao_fim_e_essa_e_sua_ultima_oportunidade_de_garant.jpg?ex=68c1b1e4&is=68c06064&hm=586a98945552e61ec4b73b69b42735391b8f7387719fa0ea8d699a6f4077fa3a&=&format=webp&width=768&height=960",
+    imageUrl: "https://media.discordapp.net/attachments/1379159762112876585/1415031707211530270/Camiseta_Oversized_Makima_Um_corte_minimalista_na_frente_de_uma_grande_arte_atras_Garanta_.jpg?ex=68c1ba79&is=68c068f9&hm=ece31d7aa80bec93b0fbc008e311739fb380047297ce2e863cc340732033db8d&=&format=webp&width=565&height=706",
   },
   {
     _id: "2",
     name: "Makima-Camisa Oversized",
     price: 99.00,
-    imageUrl: "https://media.discordapp.net/attachments/1379159762112876585/1415023171546910730/PROMOCAO_FINAL_DE_ESTOQUE_Chegou_a_hora_de_garantir_as_ultimas_pecas_do_DROP_1.0_Leve_3_1.jpg?ex=68c1b285&is=68c06105&hm=9e0a815f4fa6b0b289fcf7aaa131e47fe87b7ce011e9395e3f1f3d4fa5b63119&=&format=webp&width=768&height=960",
+    imageUrl: "https://media.discordapp.net/attachments/1379159762112876585/1415031467305603072/Camiseta_Oversized-_One_Piece_Entrega_para_todo_o_Brasil_.jpg?ex=68c1ba3f&is=68c068bf&hm=4d61e55d9bac2dd8b3230b6ba83a96c37e08e5312c60f48a246a988ccb7e0d59&=&format=webp&width=565&height=706",
   },
   {
     _id: "3",
     name: "Nika- Camisa Oversized",
     price: 99.00,
-    imageUrl: "https://media.discordapp.net/attachments/1379159762112876585/1415023417945624639/PRE-VENDA_LIBERADA_O_DROP_2.0_chegou_com_Edicoes_Limitadas_que_vao_fazer_seu_coracao_otaku.jpg?ex=68c1b2c0&is=68c06140&hm=30878746cffe3910544c226af58ceb063dcae9cd278a2efdd1ca7231f9769bc3&=&format=webp&width=768&height=960",
+    imageUrl: "https://media.discordapp.net/attachments/1379159762112876585/1415031707211530270/Camiseta_Oversized_Makima_Um_corte_minimalista_na_frente_de_uma_grande_arte_atras_Garanta_.jpg?ex=68c1ba79&is=68c068f9&hm=ece31d7aa80bec93b0fbc008e311739fb380047297ce2e863cc340732033db8d&=&format=webp&width=565&height=706",
   },
   {
     _id: "4",
     name: "Gojo- Camisa Oversized",
     price: 99.00,
-    imageUrl: "https://media.discordapp.net/attachments/1379159762112876585/1415023640680071188/Feliz_dia_dos_namorados_ATENCAO-Hoje_e_somente_hoje_leve_2_camisetas_pelo_preco_de_1_e_use_co.jpg?ex=68c1b2f5&is=68c06175&hm=f03d4ebad0a3d10a94c7568fe96689b6816063a6af3936b4116edc50cdabe5d1&=&format=webp&width=768&height=960",
+    imageUrl: "https://media.discordapp.net/attachments/1379159762112876585/1415023640680071188/Feliz_dia_dos_namorados_ATENCAO-Hoje_e_somente_hoje_leve_2_camisetas_pelo_preco_de_1_e_use_co.jpg?ex=68c1b2f5&is=68c06175&hm=f03d4ebad0a3d10a94c7568fe96689b6816063a6af3936b4116edc50cdabe5d1&=&format=webp&width=565&height=706",
   },
 ];
 
@@ -87,10 +87,12 @@ export default function Home() {
       <Navbar />
 
       <main>
-        {/* Hero Section */}
-        <section className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: "url('https://media.discordapp.net/attachments/1379159762112876585/1415029746781261894/516543702_18412087525098859_7114017648274921577_n.jpg?ex=68c1b8a5&is=68c06725&hm=e7c1923b6569ebaa102a1015654763298eef90a7b52bab66ca2fddcb47b5750b&=&format=webp')" }}>
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          </div>
+        {/* Hero Section 1 */}
+        <section
+          className="relative h-[60vh] bg-cover bg-center"
+          style={{ backgroundImage: "url('https://media.discordapp.net/attachments/1379159762112876585/1415051990270218382/70af2881c5da1d820e2e2c9e1543ccc6.png?ex=68c1cd5c&is=68c07bdc&hm=d895218a2ebee97149cc8a8df1a0e0f71473e52cdb3d36bddba0c56d3dd5a0f8&=&format=webp&quality=lossless')" }}
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
         </section>
 
         {/* Novo Drop Section */}
@@ -102,8 +104,22 @@ export default function Home() {
             <p className="text-lg mt-2">USE O CUPOM PARA GANHAR 10% DE DESCONTO!</p>
             <p className="text-2xl font-bold text-red-600 mt-2">GATOAIO</p>
           </div>
+
+          {/* Produtos Novo Drop */}
+          <div className="mt-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {products.map((product) => (
+              <ProductCard key={product._id} product={product} />
+            ))}
+          </div>
         </section>
 
+        {/* Hero Section 2 */}
+        <section
+          className="relative h-[60vh] bg-cover bg-center"
+          style={{ backgroundImage: "url('https://media.discordapp.net/attachments/1379159762112876585/1415051990270218382/70af2881c5da1d820e2e2c9e1543ccc6.png?ex=68c1cd5c&is=68c07bdc&hm=d895218a2ebee97149cc8a8df1a0e0f71473e52cdb3d36bddba0c56d3dd5a0f8&=&format=webp&quality=lossless')" }}
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"></div>
+        </section>
 
         {/* Mais Vendidos Section */}
         <section id="camisetas" className="py-16 px-4 sm:px-6 lg:px-8">
@@ -125,8 +141,8 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
             >
-              {products.map((product) => (
-                <motion.div key={product._id} variants={itemVariants}>
+              {products.concat(products).map((product, index) => (
+                <motion.div key={index} variants={itemVariants}>
                   <ProductCard product={product} />
                 </motion.div>
               ))}
@@ -167,7 +183,6 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
-
       </main>
 
       <Footer />
