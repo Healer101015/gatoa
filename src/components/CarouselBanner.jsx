@@ -19,7 +19,7 @@ export default function CarouselBanner() {
                     {/* Slide 1 */}
                     <div className="relative">
                         <img
-                            src="https://malikalashstore.com.br/cdn/shop/files/Banner_PC_-_KARINE_1_1200x.png?v=1750268665"
+                            src="https://media.discordapp.net/attachments/1379159762112876585/1415029746781261894/516543702_18412087525098859_7114017648274921577_n.jpg?ex=68c1b8a5&is=68c06725&hm=e7c1923b6569ebaa102a1015654763298eef90a7b52bab66ca2fddcb47b5750b&=&format=webp"
                             alt="Banner 1"
                             className="object-cover w-full h-[450px]"
                         />
