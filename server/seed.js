@@ -1,29 +1,32 @@
 const mongoose = require("mongoose");
 const Product = require("./models/Product");
 
-mongoose.connect("mongodb://localhost:27017/pelebrasileira");
+mongoose.connect("mongodb://localhost:27017/gatoa");
 
 const products = [
     {
-        name: "Vestido Floral",
-        description: "Leve e perfeito para o verão",
-        price: 129.90,
-        imageUrl: "https://via.placeholder.com/200x250.png?text=Vestido+Floral",
-        stock: 10,
+        name: "Camiseta Preta Básica",
+        description: "100% algodão, perfeita para o dia a dia.",
+        price: 39.90,
+        imageUrl: "https://via.placeholder.com/200x250.png?text=Camiseta+Preta",
+        stock: 50,
+        category: "camisetas",
     },
     {
-        name: "Camisa Oversized",
-        description: "Estilo urbano, confortável",
-        price: 89.90,
-        imageUrl: "https://via.placeholder.com/200x250.png?text=Camisa+Oversized",
-        stock: 15,
+        name: "Camiseta Branca Estampada",
+        description: "Estampa exclusiva Gatoa.",
+        price: 45.90,
+        imageUrl: "https://via.placeholder.com/200x250.png?text=Camiseta+Branca",
+        stock: 40,
+        category: "camisetas",
     },
     {
-        name: "Calça Cargo",
-        description: "Estilosa e prática",
-        price: 149.90,
-        imageUrl: "https://via.placeholder.com/200x250.png?text=Calça+Cargo",
-        stock: 8,
+        name: "Camiseta Cinza Mescla",
+        description: "Conforto e estilo em uma só peça.",
+        price: 39.90,
+        imageUrl: "https://via.placeholder.com/200x250.png?text=Camiseta+Cinza",
+        stock: 60,
+        category: "camisetas",
     },
 ];
 

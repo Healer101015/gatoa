@@ -1,91 +1,54 @@
 import React from "react";
-import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { Cat } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200 py-10 text-sm">
-      <div className="container mx-auto flex flex-row flex-wrap justify-between items-start gap-6 px-4">
-        {/* Coluna 1 */}
-        <div className="w-[45%] sm:w-[30%]">
-          <h4 className="font-semibold text-sky-500 mb-3">Informação</h4>
-          <ul className="text-gray-600 space-y-2">
-            <li>
-              <a href="/sobre" className="hover:text-sky-600 transition">
-                Sobre nós
+    // Usando bg-brand-black para garantir o fundo preto e uma borda cinza mais clara
+    <footer className="bg-brand-black text-brand-white border-t border-gray-800 mt-auto">
+      <div className="container mx-auto px-6 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
+
+          {/* Logo e Nome */}
+          <div className="flex flex-col items-center md:items-start">
+            <a href="/" className="flex items-center gap-2 text-brand-white">
+              <Cat size={32} />
+              <span className="text-xl font-bold">Gatoa</span>
+            </a>
+            <p className="text-sm text-brand-gray mt-2">
+              Estilo e conforto em cada peça.
+            </p>
+          </div>
+
+          {/* Links de Navegação */}
+          <div className="text-center">
+            <h4 className="font-semibold mb-2 uppercase tracking-wider">Links</h4>
+            <ul className="space-y-1">
+              <li><a href="/" className="text-brand-white hover:text-brand-gray transition-colors">Home</a></li>
+              <li><a href="#promocoes" className="text-brand-white hover:text-brand-gray transition-colors">Promoções</a></li>
+              <li><a href="#" className="text-brand-white hover:text-brand-gray transition-colors">Contato</a></li>
+            </ul>
+          </div>
+
+          {/* Redes Sociais */}
+          <div className="text-center md:text-right">
+            <h4 className="font-semibold mb-2 uppercase tracking-wider">Siga-nos</h4>
+            <div className="flex justify-center md:justify-start space-x-4">
+              <a href="#" aria-label="Instagram" className="text-2xl text-brand-white hover:text-brand-gray transition-colors">
+                <FaInstagram />
               </a>
-            </li>
-            <li>
-              <a href="/privacidade" className="hover:text-sky-600 transition">
-                Política de Privacidade
+              <a href="#" aria-label="Whatsapp" className="text-2xl text-brand-white hover:text-brand-gray transition-colors">
+                <FaWhatsapp />
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
 
-        {/* Coluna 2 */}
-        <div className="w-[45%] sm:w-[30%]">
-          <h4 className="font-semibold text-sky-500 mb-3">Ajuda</h4>
-          <ul className="text-gray-600 space-y-2">
-            <li>
-              <a href="/como-comprar" className="hover:text-sky-600 transition">
-                Como comprar
-              </a>
-            </li>
-            <li>
-              <a href="/faq" className="hover:text-sky-600 transition">
-                Perguntas frequentes
-              </a>
-            </li>
-            <li>
-              <a href="/contato" className="hover:text-sky-600 transition">
-                Contato
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Coluna 3 */}
-        <div className="w-full sm:w-[30%]">
-          <h4 className="font-semibold text-sky-500 mb-3">Redes Sociais</h4>
-          <ul className="text-gray-600 space-y-2">
-            <li className="flex items-center gap-2 hover:text-sky-600 transition cursor-pointer">
-              <FaInstagram />
-              <a
-                href="https://instagram.com/seuusuario"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </a>
-            </li>
-            <li className="flex items-center gap-2 hover:text-sky-600 transition cursor-pointer">
-              <FaLinkedin />
-              <a
-                href="https://linkedin.com/in/seuusuario"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li className="flex items-center gap-2 hover:text-sky-600 transition cursor-pointer">
-              <FaWhatsapp />
-              <a
-                href="https://wa.me/seunumerodetelefone"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
-            </li>
-          </ul>
+        {/* Direitos Autorais */}
+        <div className="text-center text-brand-gray text-sm mt-8 pt-6 border-t border-gray-800">
+          <p>&copy; {new Date().getFullYear()} Gatoa. Todos os direitos reservados.</p>
         </div>
       </div>
-
-      {/* Copyright */}
-      <p className="text-center text-xs text-gray-400 mt-10">
-        © 2025 Angels. Todos os direitos reservados.
-      </p>
     </footer>
   );
 }

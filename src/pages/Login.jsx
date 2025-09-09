@@ -29,40 +29,42 @@ export default function Login() {
     };
 
     return (
-        <form
-            onSubmit={login}
-            className="max-w-md mx-auto mt-16 p-6 border border-gray-300 rounded shadow-sm"
-        >
-            <h2 className="text-2xl text-yellow-800 font-light mb-6 text-center">
-                Entrar na sua conta
-            </h2>
-
-            <label className="block mb-1 text-sm text-yellow-800">Email</label>
-            <input
-                type="email"
-                placeholder="Digite seu email"
-                className="border border-gray-300 p-2 w-full rounded mb-4 text-sm outline-yellow-700"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-            />
-
-            <label className="block mb-1 text-sm text-yellow-800">Senha</label>
-            <input
-                type="password"
-                placeholder="Digite sua senha"
-                className="border border-gray-300 p-2 w-full rounded mb-6 text-sm outline-yellow-700"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-            />
-
-            <button
-                type="submit"
-                className="w-full bg-yellow-700 text-white text-sm py-2 rounded hover:bg-yellow-800 transition"
+        <div className="bg-brand-black text-brand-white min-h-screen flex items-center justify-center">
+            <form
+                onSubmit={login}
+                className="max-w-md w-full mx-auto mt-16 p-8 border border-brand-gray rounded shadow-lg bg-gray-900"
             >
-                Entrar
-            </button>
-        </form>
+                <h2 className="text-3xl font-bold mb-6 text-center">
+                    Entrar na sua conta
+                </h2>
+
+                <label className="block mb-1 text-sm">Email</label>
+                <input
+                    type="email"
+                    placeholder="Digite seu email"
+                    className="border border-brand-gray p-2 w-full rounded mb-4 text-sm bg-gray-800 outline-none focus:ring-2 focus:ring-white"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                />
+
+                <label className="block mb-1 text-sm">Senha</label>
+                <input
+                    type="password"
+                    placeholder="Digite sua senha"
+                    className="border border-brand-gray p-2 w-full rounded mb-6 text-sm bg-gray-800 outline-none focus:ring-2 focus:ring-white"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                />
+
+                <button
+                    type="submit"
+                    className="w-full bg-white text-black text-sm py-2 rounded hover:bg-gray-300 transition font-bold"
+                >
+                    Entrar
+                </button>
+            </form>
+        </div>
     );
 }

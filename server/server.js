@@ -10,9 +10,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const ADMIN_EMAIL = "admin@exemplo.com";
+const ADMIN_EMAIL = "gatoa@gatoa.com";
 
-mongoose.connect("mongodb://localhost:27017/pelebrasileira");
+mongoose.connect("mongodb://localhost:27017/gatoa");
 
 /////////////////////
 // Middleware JWT
@@ -112,4 +112,3 @@ app.post("/api/admin/products", verifyToken, isAdmin, async (req, res) => {
 app.listen(4000, () => {
     console.log("Servidor rodando na porta 4000");
 });
-////////////////////////////////////

@@ -1,12 +1,10 @@
-# Angels
+# Gatoa
 ![Imagem do Projeto](./src/assets/logo.png) 
-site da nossa loja, programação
-Um site responsivo feito com React e TailwindCSS.
+## Loja de Camisetas Gatoa
 
-## Pré-requisitos
+Um site de e-commerce responsivo para a loja de camisetas Gatoa, feito com React e TailwindCSS.
 
-site feito por João e Raul
-
+### Pré-requisitos
 
 Antes de começar, certifique-se de ter instalado:
 
@@ -17,15 +15,3 @@ Verifique com os comandos:
 ```bash
 node -v
 npm -v
-
-Instalando as dependências
-Depois de clonar o projeto, abra o terminal na raiz do projeto e execute:
-
-bash
-npm install
-
-
-Rodando o projeto
-Após instalar as dependências, use:
-
-npm start run

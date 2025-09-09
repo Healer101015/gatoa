@@ -53,12 +53,12 @@ export default function Admin() {
     };
 
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-brand-black text-brand-white">
             <Navbar />
             <main className="flex-grow container mx-auto p-6">
-                <h1 className="text-3xl font-bold mb-6 text-yellow-700">Painel Admin</h1>
+                <h1 className="text-3xl font-bold mb-6">Painel Admin</h1>
 
-                <form onSubmit={handleSubmit} className="max-w-lg bg-white p-6 rounded shadow">
+                <form onSubmit={handleSubmit} className="max-w-lg bg-gray-800 p-6 rounded shadow">
                     <div className="mb-4">
                         <label className="block mb-1 font-semibold">Nome do Produto *</label>
                         <input
@@ -67,7 +67,7 @@ export default function Admin() {
                             value={form.name}
                             onChange={handleChange}
                             required
-                            className="w-full border p-2 rounded"
+                            className="w-full border p-2 rounded bg-gray-700 border-gray-600"
                         />
                     </div>
 
@@ -77,7 +77,7 @@ export default function Admin() {
                             name="description"
                             value={form.description}
                             onChange={handleChange}
-                            className="w-full border p-2 rounded"
+                            className="w-full border p-2 rounded bg-gray-700 border-gray-600"
                         />
                     </div>
 
@@ -90,7 +90,7 @@ export default function Admin() {
                             value={form.price}
                             onChange={handleChange}
                             required
-                            className="w-full border p-2 rounded"
+                            className="w-full border p-2 rounded bg-gray-700 border-gray-600"
                         />
                     </div>
 
@@ -102,7 +102,7 @@ export default function Admin() {
                             value={form.imageUrl}
                             onChange={handleChange}
                             placeholder="https://..."
-                            className="w-full border p-2 rounded"
+                            className="w-full border p-2 rounded bg-gray-700 border-gray-600"
                         />
                     </div>
 
@@ -113,7 +113,7 @@ export default function Admin() {
                             name="stock"
                             value={form.stock}
                             onChange={handleChange}
-                            className="w-full border p-2 rounded"
+                            className="w-full border p-2 rounded bg-gray-700 border-gray-600"
                         />
                     </div>
 
@@ -125,14 +125,14 @@ export default function Admin() {
                             value={form.category}
                             onChange={handleChange}
                             required
-                            className="w-full border p-2 rounded"
-                            placeholder="Ex: estetica, produtos, outros"
+                            className="w-full border p-2 rounded bg-gray-700 border-gray-600"
+                            placeholder="Ex: camisetas, moletons, acessorios"
                         />
                     </div>
 
                     <button
                         type="submit"
-                        className="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition"
+                        className="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 transition"
                     >
                         Criar Produto
                     </button>
