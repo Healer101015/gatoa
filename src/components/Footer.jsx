@@ -5,7 +5,7 @@ import { Cat } from 'lucide-react';
 export default function Footer() {
   return (
     // Usando bg-brand-black para garantir o fundo preto e uma borda cinza mais clara
-    <footer className="bg-brand-black text-brand-white border-t border-gray-800 mt-auto">
+    <footer className="bg-black text-brand-white border-t border-gray-800 mt-auto">
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
 

@@ -1,30 +1,31 @@
+import React from "react";
 import { motion } from "framer-motion";
 
-export default function ProductCard({ title, desc, img }) {
+export default function ProductCard({ product }) {
     return (
         <motion.div
-            whileHover={{ y: -10, scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 120, damping: 18 }}
-            className="relative max-w-sm w-full rounded-3xl overflow-hidden shadow-xl bg-white/20 backdrop-blur-md border border-white/30 hover:shadow-2xl hover:backdrop-blur-lg group"
+            whileHover={{ y: -5 }}
+            className="bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden flex flex-col"
         >
-            {/* Imagem de fundo */}
-            <div
-                className="h-56 w-full bg-cover bg-center transition-all duration-500 group-hover:scale-105"
-                style={{ backgroundImage: `url(${img})` }}
+            <img
+                src={product.imageUrl || "https://via.placeholder.com/300x400"}
+                alt={product.name}
+                className="w-full h-64 object-cover"
             />
-
-            {/* Camada de conteúdo */}
-            <div className="p-6 space-y-3">
-                <h3 className="text-xl font-semibold text-sky-900 group-hover:text-sky-700 transition-colors duration-300">
-                    {title}
-                </h3>
-                <p className="text-gray-700 text-sm leading-relaxed group-hover:text-gray-600 transition-colors duration-300">
-                    {desc}
+            <div className="p-4 flex flex-col flex-grow">
+                <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
+                <p className="text-sm text-gray-400 mb-4 flex-grow">
+                    {product.description}
                 </p>
+                <div className="flex justify-between items-center mt-auto">
+                    <p className="text-xl font-bold text-white">
+                        R$ {product.price.toFixed(2)}
+                    </p>
+                    <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
+                        Adicionar
+                    </button>
+                </div>
             </div>
-
-            {/* Brilho sutil */}
-            <div className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-30 transition duration-700 bg-gradient-to-br from-white via-transparent to-white mix-blend-soft-light" />
         </motion.div>
     );
 }
